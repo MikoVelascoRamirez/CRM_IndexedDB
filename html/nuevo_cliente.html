@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>CRM - IndexedDB</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Aside contenedor del menú-->
+        <aside class="menu">
+            <h2>CRM - IndexedDB</h2>
+            <p>Administra tus clientes con el CRM - IndexedDB</p>
+            <nav>
+                <ul>
+                    <li><a href="../html/clientes.html">Clientes</a></li>
+                    <li><a href="../html/nuevo_cliente.html">Nuevo Cliente</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Formulario -->
+        <section class="agenda_clientes">
+            <h2>Nuevo Cliente</h2>
+            <form>
+                <label for="inp_Name">Nombre</label>
+                <span><input type="text" name="" id="inp_Name" placeholder="Nombre Cliente"><i class="tiny material-icons">account_circle</i></span>
+                <label for="inp_Email">Email</label>
+                <span><input type="email" name="" id="inp_Email" placeholder="Email Cliente"><i class="tiny material-icons">email</i></span>
+                <label for="inp_Phone">Teléfono</label>
+                <span><input type="text" name="" id="inp_Phone" placeholder="Teléfono Cliente"><i class="tiny material-icons">phone_android</i></span>
+                <label for="inp_Empresa">Empresa</label>
+                <span><input type="text" name="" id="inp_Empresa" placeholder="Empresa Cliente"><i class="tiny material-icons">domain</i></span>                
+                <input type="submit" value="Agregar cliente" id="btnAddClient" class="btnAddClient">
+            </form>
+        </section>
+    </div>
+
+    <!-- <script src="../js/funciones.js"></script> -->
+    <script src="../js/index.js"></script>
+    <script src="../js/nuevoCliente.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

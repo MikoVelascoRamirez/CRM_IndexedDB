@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500&family=Lexend:wght@100;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Lexend', sans-serif;
+    /* font-family: 'Baloo Chettan 2', cursive; */
+    font-weight: 300;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(223, 228, 234, 0.5);
+}
+
+/* Menú */
+
+.container>.menu {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: #218c74;
+}
+
+.container>.menu>* { padding: 10px; }
+
+.container>.menu>h2 {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+.container>.menu>p {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+}
+
+.container>.menu>nav { padding: 15px; }
+
+.container>.menu>nav>ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.container>.menu>nav>ul>li {
+    list-style: none;
+    padding: 5px;
+}
+
+.container>.menu>nav>ul>li:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container>.menu>nav>ul>li>a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+/* Agenda de clientes*/
+
+.container>.agenda_clientes {
+    width: 80%;
+}
+
+.container>.agenda_clientes>h2 {
+    text-align: center;
+    margin: 40px 0 30px 0;
+    font-weight: 500;
+}
+
+.container>.agenda_clientes>form {
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container>.agenda_clientes>form>label {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.container>.agenda_clientes>form>span {
+    padding: 5px;
+    border: 1px solid rgba(164, 176, 190, 0.5);
+    border-radius: 3px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container>.agenda_clientes>form>span>i { color: rgba(132, 129, 122, 0.6); }
+
+.container>.agenda_clientes>form>span>input:not(submit) {
+    border: none;
+    width: 100%;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+.container>.agenda_clientes>form>span>input:not(submit):focus { outline: none; }
+
+.container>.agenda_clientes>form>.btnAddClient {
+    margin-top: 20px;
+    padding: 8px;
+    background-color: #218c74;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container>.agenda_clientes>form>.btnAddClient:hover{
+    opacity: 0.7;
+}
+
+/* Catálogo de clientes*/
+.table{
+    margin: 0 auto;
+    width: 99%;
+    text-align: left;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 1.5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.table > thead > tr > th{
+    padding: 8px 0px 8px 20px;    
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.6);
+}
+
+.table > tbody > tr > td{
+    text-align: left;
+    padding: 8px 0px 8px 20px;    
+    font-size: 13px;
+}
+
+.table > tbody > tr > td > p:nth-child(1){ font-weight: bold; }
+
+/* Mensaje de alerta*/
+.mensajeAlerta{
+    width: 100%;
+    padding: 5px 0px;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Enlaces de tabla */
+.container > .agenda_clientes > .table > tbody > tr > td > a { text-decoration: none; }
+
+.container > .agenda_clientes > .table > tbody > tr > td > a:nth-child(1){ color: blue}
+
+.container > .agenda_clientes > .table > tbody > tr > td > a:nth-child(2){ color: red}
